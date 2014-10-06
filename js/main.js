@@ -7,8 +7,9 @@ $(document).ready(function(){
     $('.slide').css("opacity", 1);
 
     //initalize onepage scroll
-    $(".main").onepage_scroll({
-        sectionContainer: "section"
+    $(".main").onepage_scroll_extended({
+        sectionContainer: "section",
+		paginationContainer: ".sideMenu"
     });
 
     //cross browser opacity 
@@ -17,7 +18,7 @@ $(document).ready(function(){
     //MIX it up
     $('#Grid').mixitup();
 
-    //initalize g maps
+    // 구글맵 초기화
     function initialize() {
         var mapOptions = {
             center: new google.maps.LatLng(51.511214, -0.119824),
@@ -34,19 +35,17 @@ $(document).ready(function(){
     //initalize quote slider
     $( '#cbp-qtrotator' ).cbpQTRotator();
 
-    //initalize big video
-    var BV = new $.BigVideo({useFlashForFirefox:false});
-
-    BV.init();
-    if (Modernizr.touch) {
-        BV.show('img/background1.jpg');
-    } else {
-        BV.show('video/timelapse.mp4',
-            {ambient:true,
-            doLoop:true,
-            altSource:'video/timelapse.ogv'});
-
-    }
+    // BigVideo 라이브러리 초기화
+    //var BV = new $.BigVideo({useFlashForFirefox:false});
+    //BV.init();
+    //if (Modernizr.touch) {
+    //    BV.show('img/background1.jpg');
+    //} else {
+    //    BV.show('video/timelapse.mp4',
+    //        {ambient:true,
+    //        doLoop:true,
+    //        altSource:'video/timelapse.ogv'});
+    //}
 
     //animate in video so you dont see resize
     setTimeout( function () {
@@ -136,19 +135,18 @@ $(document).ready(function(){
 
     //UI handle
     $('.location-scroll').on('click', function (e) {
-
         e.preventDefault();
-
         $('.onepage-pagination li:nth-child(5)').children().trigger('click');
     });
 
     $('.client-scroll').on('click', function (e) {
-
         e.preventDefault();
-
         $('.onepage-pagination li:nth-child(4)').children().trigger('click');
     });
 
+	$('.scrolldown').on('click', function(e) {
+		$(".main").moveDown();
+	});
     
     $('.onepage-pagination').addClass("animated fadeInUp delay-2");
 
@@ -157,19 +155,19 @@ $(document).ready(function(){
         switch ($(this).children().data('index')) {
 
             case 1 :
-                $(this).children().append("<i class='entypo-home'></i>");
+                $(this).children().append("<div></div>");
             break;
             case 2 :
-                $(this).children().append("<i class='entypo-users'></i>");
+                $(this).children().append("<div></div>");
             break;
             case 3 :
-                $(this).children().append("<i class='entypo-book'></i>");
+                $(this).children().append("<div></div>");
             break;
             case 4 :
-                $(this).children().append("<i class='entypo-heart'></i>");
+                $(this).children().append("<div></div>");
             break;
             case 5 :
-                $(this).children().append("<i class='entypo-mail'></i>");
+                $(this).children().append("<div></div>");
             break;
         }
     });
@@ -179,16 +177,13 @@ $(document).ready(function(){
     =            Settings            =
     ================================*/
     
-    $('.settings-icon').on('click', function () {
-
-        $(this).parent().toggleClass("open");
-
-    });
+    //$('.settings-icon').on('click', function () {
+    //    $(this).parent().toggleClass("open");
+    //});
     
-    $('.toggle-video').on('click', function() {
-        $('#big-video-wrap').toggleClass('hide-video');
-    });
-
+    //$('.toggle-video').on('click', function() {
+    //    $('#big-video-wrap').toggleClass('hide-video');
+    //});
 
     /*-----  End of Settings  ------*/
     
