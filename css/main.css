@@ -1,6 +1,6 @@
-/* Google Webfont Raleway ºÒ·¯¿À±â */
+ï»¿/* Google Webfont Raleway ë¶ˆëŸ¬ì˜¤ê¸° */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,600,700,800,900|Pacifico|Lato:300,400);
-/* Icon font Entypo ºÒ·¯¿À±â */
+/* Icon font Entypo ë¶ˆëŸ¬ì˜¤ê¸° */
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 [class*="entypo-"]:before {
 	font-family:"entypo",sans-serif
@@ -18,6 +18,7 @@ body,button,input,select,textarea {
 }
 
 /* p */
+/*
 p {
 	margin-bottom:30px;
 	font-family:"Lato",sans-serif;
@@ -45,7 +46,7 @@ p {
 		line-height:2.6rem
 	}
 }
-
+*/
 a {
 	text-decoration:none;
 	color:#4e4e4e;
@@ -106,7 +107,7 @@ ul li,ol li {
 	margin:5px 0
 }
 
-/* Home ¼½¼ÇÀÇ h1°ú p´Â ÇÊ¿ä ¾ø¾îÁø´Ù */
+/* Home ì„¹ì…˜ì˜ h1ê³¼ pëŠ” í•„ìš” ì—†ì–´ì§„ë‹¤ */
 /* .home h1 {
 	margin-top:40px;
 	margin-bottom:40px;
@@ -171,7 +172,7 @@ ul li,ol li {
 .main {
 	height: 100%;
 }
-/* Home ¼½¼ÇÀÇ dark Åõ¸í ·¹ÀÌ¾î Á¦°ÅÇÏ±â */
+/* Home ì„¹ì…˜ì˜ dark íˆ¬ëª… ë ˆì´ì–´ ì œê±°í•˜ê¸° */
 .home {
 	/* background-color:rgba(50,50,50,0.8) */
 	height: 100%;
@@ -191,9 +192,9 @@ ul li,ol li {
 }
 
 
-/* s : Home ¼½¼ÇÀÇ ·Î°í */
+/* s : Home ì„¹ì…˜ì˜ ë¡œê³  */
 .home img {
-	width:250px;
+	width:auto;
 	height:auto;
 	display:block;
 	margin:0 auto;
@@ -201,7 +202,7 @@ ul li,ol li {
 	/* border: 1px solid red; */
 	box-sizing: border-box;
 }
-/* ½º¸¶Æ®Æù ¹Ìµğ¾îÄõ¸® */
+/* ìŠ¤ë§ˆíŠ¸í° ë¯¸ë””ì–´ì¿¼ë¦¬ */
 @media screen and (max-width: 30.6em) {
 	.home img {
 		width:180px;
@@ -213,9 +214,9 @@ ul li,ol li {
 		margin-top:0;
 	}
 }
-/* e : Home ¼½¼ÇÀÇ ·Î°í */
+/* e : Home ì„¹ì…˜ì˜ ë¡œê³  */
 
-/* s : Home ¼½¼ÇÀÇ scroll down ¹öÆ° */
+/* s : Home ì„¹ì…˜ì˜ scroll down ë²„íŠ¼ */
 .home .scrolldown {
 	position: absolute;
 	left: 0;
@@ -228,7 +229,7 @@ ul li,ol li {
 	background-size: 100%;
 	cursor: pointer;
 }
-/* ½º¸¶Æ®Æù ¹Ìµğ¾îÄõ¸® */
+/* ìŠ¤ë§ˆíŠ¸í° ë¯¸ë””ì–´ì¿¼ë¦¬ */
 @media screen and (max-width: 30.6em) {
 	.home .scrolldown {
 		width: 50px;
@@ -237,7 +238,7 @@ ul li,ol li {
 		background-size: 100%;
 	}
 }
-/* e : Home ¼½¼ÇÀÇ scroll down ¹öÆ° */
+/* e : Home ì„¹ì…˜ì˜ scroll down ë²„íŠ¼ */
 .home .home-title {
 	margin-bottom:20px;
 	font-family:"Raleway",sans-serif;
@@ -282,7 +283,7 @@ ul li,ol li {
 }
 .home h1 {
 	margin:0;
-	margin-top:20px
+	margin-top:20
 }
 @media (min-width: 768px) {
 	.home h1 {
@@ -395,12 +396,100 @@ ul li,ol li {
 	font-size:1.4rem
 	}
 }
+
+
+/*ì¥ì†Œ*/
 .slide-2 {
-	background-color:#3c3c3c
+	background-color:#f7f7f7
+
 }
-.slide-2 h2 {
+/*.slide-2 h2 {
 	margin-bottom:15px
+}*/
+
+/*
+.slide-2 .container {
+	height: 80%;
 }
+.slide-2 .container .row {
+	display: table;
+	height: 80%;
+}
+.slide-2 .container .row > div {
+	display: table-cell;
+	vertical-align: middle;
+	margin: auto 0;
+} */
+.slide-2 img {
+	padding-top:130px;
+	
+}
+.slide-2 .title{
+	margin-bottom:3px;
+	text-align:right;
+	color:#3c474d;
+	font-family:"Lato",sans-serif;
+	font-size:14px;
+	font-size:1.4rem;
+	line-height:20px;
+	line-height:2rem
+	
+
+}
+
+.slide-2 .text{
+	margin-bottom:3px;
+	text-align:left;
+	color:#3c474d;
+	font-family:"Lato",sans-serif;
+	font-size:14px;
+	font-size:1.4rem;
+	line-height:20px;
+	line-height:2rem
+	
+	
+}
+/*.slide-2 p {
+	color:#3c474d;
+	margin-bottom:5px;
+	font-family:"Lato",sans-serif;
+	letter-spacing:2px;
+	text-align:left;
+	font-size:13px;
+	font-size:1.3rem;
+	line-height:20px;
+	line-height:2rem
+}*/
+
+.slide-2 .row {
+	padding-top:50px;
+
+} 
+
+@media (min-width: 768px) {
+	p {
+		font-size:18px;
+		font-size:1.8rem;
+		line-height:22px;
+		line-height:2.2rem
+	}
+}
+
+@media (min-width: 992px) {
+	p {
+		font-size:20px;
+		font-size:2rem;
+		line-height:26px;
+		line-height:2.6rem
+	}
+}
+
+
+
+
+
+/*
+
 .slide-2 ul {
 	text-align:center;
 	margin-bottom:30px
@@ -482,6 +571,9 @@ ul li,ol li {
 	opacity:0;
 	display:none
 }
+*/
+
+
 .slide-3 {
 	background-color:#333
 }
@@ -546,7 +638,7 @@ ul li,ol li {
 
 
 
-/* s : Contact ¼½¼Ç */
+/* s : Contact ì„¹ì…˜ */
 .contact {
 	background-color:#333
 }
@@ -790,7 +882,7 @@ ul li,ol li {
 .contact .social .instagrem:hover {
 	background-color:#3f729b
 }
-/* e : Contact ¼½¼Ç */
+/* e : Contact ì„¹ì…˜ */
 
 
 
@@ -800,7 +892,7 @@ ul li,ol li {
 
 
 
-/* s : ½ºÅ©·Ñ ³×ºñ°ÔÀÌ¼Ç */
+/* s : ìŠ¤í¬ë¡¤ ë„¤ë¹„ê²Œì´ì…˜ */
 .sideMenu {
 	background: transparent;
 	border-left: none;
@@ -875,10 +967,10 @@ ul li,ol li {
 	border-radius: 3px;
 	background: #808080;
 }
-/* e : ½ºÅ©·Ñ ³×ºñ°ÔÀÌ¼Ç */
+/* e : ìŠ¤í¬ë¡¤ ë„¤ë¹„ê²Œì´ì…˜ */
 
 
-/* s : ·¹ÀÌ¾î ÆË¾÷ ¹Ú½º */
+/* s : ë ˆì´ì–´ íŒì—… ë°•ìŠ¤ */
 .modal-dialog {
 	padding-top:20px
 }
@@ -945,7 +1037,7 @@ ul li,ol li {
 	margin:0 auto;
 	margin-bottom:15px
 }
-/* e : ·¹ÀÌ¾î ÆË¾÷ ¹Ú½º */
+/* e : ë ˆì´ì–´ íŒì—… ë°•ìŠ¤ */
 
 
 .cbp-qtrotator {
@@ -1027,7 +1119,7 @@ ul li,ol li {
 	float:right;
 	margin-left:3em
 }
-/* ½º¸¶Æ®Æù ¹Ìµğ¾îÄõ¸® */
+/* ìŠ¤ë§ˆíŠ¸í° ë¯¸ë””ì–´ì¿¼ë¦¬ */
 @media screen and (max-width: 30.6em) {
 	.cbp-qtrotator {
 		font-size:70%
